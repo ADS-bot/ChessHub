@@ -1,7 +1,7 @@
 # ChessHub
 ChessHub is a web application for chess enthusiasts that allows players to compete against each other.
 
-![Capture](https://github.com/ADS-bot/ChessHub/assets/sample.png)
+![Capture](https://github.com/ADS-bot/ChessHub/assets/Sample.png)
 
 
 ## Technologies used
