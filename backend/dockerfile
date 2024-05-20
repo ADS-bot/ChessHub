@@ -1,0 +1,23 @@
+#  Dockerfile for Node Express Backend
+
+FROM node
+
+# Create App Directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+RUN npm install -g nodemon
+
+# Install Dependencies
+COPY package*.json ./
+
+RUN npm install --silent
+
+# Copy app source code
+COPY . .
+
+RUN chmod +x ./engine/stockfish16
+
+# Exports
+EXPOSE 8080
+
+CMD ["node","app.js"]
